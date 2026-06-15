@@ -1,0 +1,21 @@
+.aboutSec {
+  padding: 100px 8%;
+  background: var(--bg);
+}
+
+.aboutCard {
+  background: var(--bg-soft);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+}
+
+.aboutCard p {
+  margin: 0;
+  line-height: 1.9;
+  color: var(--text);
+  font-size: 1.05rem;
+}

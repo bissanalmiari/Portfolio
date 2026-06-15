@@ -1,0 +1,64 @@
+:root {
+  --primary: #f297A0;
+  --primary-dark: #f38d97;
+  --secondary: #b6bb79;
+  --secondary-light: #fbd9E5;
+  --bg: #ffffff;
+  --bg-soft: #f9d0ce;
+  --bg-soft-2: #f3ebd8;
+  --text: #2b2438;
+  --text-light: #7a6f88;
+  --border: #f5d8ef;
+  --shadow: 0 10px 30px  rgba(186, 235, 101, 0.18);
+  --shadow-hover: 0 16px 40px rgba(236, 72, 153, 0.18);
+  --radius: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  margin: 0;
+}
+
+a {
+  font-family: inherit;
+}
+
+/* Shared section title styling */
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sectionTitle span {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 50px;
+  background: var(--bg-soft-2);
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.sectionTitle h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+}

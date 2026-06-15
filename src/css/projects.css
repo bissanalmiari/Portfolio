@@ -1,0 +1,74 @@
+.projectSec {
+  padding: 100px 8%;
+  background: var(--bg-soft);
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.projectCard {
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+  border: 1px solid var(--border);
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.projectImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background: var(--bg-soft-2);
+}
+
+.projectContent {
+  padding: 25px;
+}
+
+.projectContent h3 {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.projectContent p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.projectContent span {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 8px 18px;
+  background: var(--bg-soft-2);
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 50px;
+}
+
+.projectContent a {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 50px;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  margin-left: 10px;
+}
+
+.projectContent a:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
