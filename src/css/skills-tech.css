@@ -12,24 +12,22 @@
   background: var(--bg);
 }
 
-.skillsSec h2,
-.techSec h2 {
+.skillsSec h2 {
   font-size: 2.4rem;
   font-weight: 800;
   margin-bottom: 40px;
   color: var(--primary-dark);
 }
 
-.skillsSec .grid,
-.techSec .grid {
+/* Skills pills (unchanged) */
+.skillsSec .grid {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
 }
 
-.skill,
-.tech {
+.skill {
   background: white;
   padding: 14px 28px;
   border-radius: 50px;
@@ -40,11 +38,66 @@
   transition: 0.3s;
 }
 
-.skill:hover,
-.tech:hover {
+.skill:hover {
   transform: translateY(-4px);
   background: var(--primary);
   color: white;
   box-shadow: var(--shadow-hover);
   border-color: transparent;
+}
+
+/* Tech icon cards */
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.techCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 14px 18px;
+  box-shadow: var(--shadow);
+  cursor: default;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.techCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--tech-color, var(--primary));
+}
+
+.techIcon {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.techIcon svg {
+  width: 54px;
+  height: 54px;
+}
+
+.techName {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--text);
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 600px) {
+  .techGrid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 12px;
+  }
 }
