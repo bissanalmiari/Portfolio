@@ -1,12 +1,18 @@
 import "../css/skills-tech.css"
 export const Skills=()=> {
   const skills = [
-    "React",
-    "JavaScript",
+    "REST API Design",
+    "Clean Architecture",
+    "SOLID Principles",
+    "JWT Authentication",
+    "RBAC",
+    "Agile / Scrum",
+    "CI/CD",
+    "Unit & Integration Testing",
+    "Scalable System Design",
+    "LLM & Prompt Engineering",
     "Responsive Design",
-    "Laravel",
-    "MySQL",
-    "Git",
+    "SEO & Core Web Vitals",
     "Problem Solving",
     "Teamwork"
   ];

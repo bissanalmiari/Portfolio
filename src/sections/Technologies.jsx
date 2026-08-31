@@ -107,6 +107,177 @@ const techs = [
         <path d="M16 5c-4 0-8 1.1-8 3v16c0 1.9 4 3 8 3s8-1.1 8-3V8c0-1.9-4-3-8-3zm0 2c3.6 0 6 .9 6 1.5S19.6 10 16 10s-6-.9-6-1.5S12.4 7 16 7zm6 17c0 .6-2.4 1.5-6 1.5s-6-.9-6-1.5v-2.6c1.5.8 3.7 1.1 6 1.1s4.5-.3 6-1.1V24zm0-5c0 .6-2.4 1.5-6 1.5s-6-.9-6-1.5v-2.6c1.5.8 3.7 1.1 6 1.1s4.5-.3 6-1.1V19zm0-5c0 .6-2.4 1.5-6 1.5s-6-.9-6-1.5v-2.6c1.5.8 3.7 1.1 6 1.1s4.5-.3 6-1.1V14z" fill="#4479a1"/>
       </svg>
     )
+  },
+  {
+    name: "TypeScript",
+    color: "#3178c6",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="4" fill="#3178c6"/>
+        <path d="M6.5 15.8h5.9v2H10.9v9.4H8.5v-9.4H6.5v-2z" fill="#fff"/>
+        <path d="M17.9 15.6c1.9 0 3.2.7 4 1.3l-1.1 1.9c-.6-.5-1.6-1-2.7-1-1 0-1.6.4-1.6 1.1 0 .8.9 1.1 2.2 1.6 1.8.6 3.4 1.4 3.4 3.5 0 2.2-1.8 3.6-4.4 3.6-2.1 0-3.7-.8-4.6-1.7l1.2-1.9c.7.6 1.9 1.3 3.3 1.3 1.1 0 1.9-.4 1.9-1.2 0-.9-1-1.2-2.4-1.7-1.7-.6-3.2-1.4-3.2-3.4 0-2.1 1.7-3.4 4-3.4z" fill="#fff"/>
+      </svg>
+    )
+  },
+  {
+    name: "Next.js",
+    color: "#000000",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="16" fill="#000"/>
+        <path d="M12.5 11v10.2h1.8V13.6l7.6 9.7c.6-.4 1.2-.9 1.7-1.4L13.9 11h-1.4z" fill="#fff"/>
+        <path d="M19.3 11v9.2h1.8V11h-1.8z" fill="#fff"/>
+      </svg>
+    )
+  },
+  {
+    name: "Node.js",
+    color: "#5fa04e",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="4" fill="#f1faf0"/>
+        <path d="M16 3.5 4 10.3v11.4L16 28.5l12-6.8V10.3L16 3.5zM8 19.6V12.4L16 7.8l8 4.6v7.2l-8 4.6-8-4.6z" fill="#5fa04e"/>
+        <path d="M13.6 20.8c-2.4-.6-3.2-1.7-3.2-3.3h1.9c.1.9.5 1.5 2.1 1.5 1.3 0 1.9-.4 1.9-1.2 0-.8-.4-1-2.1-1.4-2.1-.4-3.4-1-3.4-2.9 0-1.7 1.4-2.8 3.4-2.8 2.1 0 3.4 1 3.6 2.9h-1.9c-.1-.9-.6-1.2-1.7-1.2-1.1 0-1.6.4-1.6 1 0 .7.4.9 2 1.3 2.2.4 3.5 1 3.5 3 0 1.9-1.5 3.1-4.5 2.1z" fill="#5fa04e"/>
+      </svg>
+    )
+  },
+  {
+    name: "Express.js",
+    color: "#000000",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="4" fill="#f3f3f3"/>
+        <path d="M4 21c2.2 0 3.6-1.1 4.6-2.6l8.9-12.6c1-1.4 2.2-2 3.9-2 2.6 0 4.3 1.8 4.3 4.2 0 1.5-.7 2.7-1.7 3.5l1.4 1.3c1.4-1.2 2.3-2.9 2.3-4.9 0-3.5-2.6-6.1-6.3-6.1-2.4 0-4.1 1-5.4 2.8L6.5 17.4c-.8 1.2-1.6 1.6-2.5 1.6H4v2z" fill="#000"/>
+        <text x="6" y="26" fontFamily="Arial, sans-serif" fontWeight="700" fontSize="8" fill="#000">express</text>
+      </svg>
+    )
+  },
+  {
+    name: "NestJS",
+    color: "#e0234e",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="16" fill="#e0234e"/>
+        <path d="M16 6c-1.2 1.6-1.8 3.4-1.8 5.3 0 3.6 2.3 6 2.3 9 0 1.7-.7 3.3-1.9 4.5 3.7-.6 8.4-3.9 8.4-9.7 0-4.6-3-7.5-7-9.1z" fill="#fff"/>
+        <path d="M11.5 10.2c-1.7 1.8-2.7 4.1-2.7 6.7 0 4 2.7 7.4 6.4 8.6-1-1.1-1.6-2.6-1.6-4.2 0-2.5-2.1-4.4-2.1-7.4 0-1.4.4-2.7 1-3.7z" fill="#fff"/>
+      </svg>
+    )
+  },
+  {
+    name: "Python",
+    color: "#3776ab",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="4" fill="#f3f8fc"/>
+        <path d="M15.9 4.5c-4.4 0-4.1 1.9-4.1 1.9v2h4.2v.6H9.9S6.5 8.6 6.5 13s2.9 4.2 2.9 4.2h1.7v-2.4s-.1-2.9 2.8-2.9h4.1s2.7.04 2.7-2.6V7.1s.4-2.6-4.8-2.6zm-2.3 1.3c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9z" fill="#3776ab"/>
+        <path d="M16.1 27.5c4.4 0 4.1-1.9 4.1-1.9v-2h-4.2v-.6h6.1s3.4.4 3.4-4s-2.9-4.2-2.9-4.2h-1.7v2.4s.1 2.9-2.8 2.9h-4.1s-2.7-.04-2.7 2.6v4.2s-.4 2.6 4.8 2.6zm2.3-1.3c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9z" fill="#ffd43b"/>
+      </svg>
+    )
+  },
+  {
+    name: "FastAPI",
+    color: "#009688",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="16" fill="#009688"/>
+        <path d="M17.5 5 8 17.5h6l-2.5 9.5L23 14.5h-6.2L17.5 5z" fill="#fff"/>
+      </svg>
+    )
+  },
+  {
+    name: "Django",
+    color: "#0c4b33",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="4" fill="#0c4b33"/>
+        <text x="4.5" y="22" fontFamily="Georgia, serif" fontWeight="700" fontSize="14" fill="#44b78b">Dj</text>
+      </svg>
+    )
+  },
+  {
+    name: "MongoDB",
+    color: "#47a248",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="4" fill="#f0faf1"/>
+        <path d="M16 4.5s5.5 3.4 5.5 11c0 4.6-2.4 7.3-4.3 8.7-.4.3-.9.1-1-.4l-.2-1.6v-4.9c1.7-.4 2.7-1.9 2.7-3.8 0-3.3-2.7-6-2.7-9zm0 0s-5.5 3.4-5.5 11c0 4.6 2.4 7.3 4.3 8.7.4.3.9.1 1-.4V15.5c-1.7-.4-2.7-1.9-2.7-3.8 0-2.2 1.2-4.2 2.9-7.2z" fill="#47a248"/>
+        <rect x="15.3" y="24" width="1.4" height="4" fill="#47a248"/>
+      </svg>
+    )
+  },
+  {
+    name: "PostgreSQL",
+    color: "#336791",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="4" fill="#eef4f9"/>
+        <path d="M16 5c-5.5 0-9.5 4.4-9.5 10 0 5.1 3.5 9.4 8.1 10.2.3-.9.6-2.3.6-3.4v-2.4c-3.5.6-4.4-1.7-4.4-1.7-.6-1.5-1.4-1.9-1.4-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.2 2 3 1.4 3.7 1.1.1-.9.4-1.4.8-1.7-2.8-.3-5.7-1.4-5.7-6.2 0-1.4.5-2.5 1.3-3.4-.1-.3-.6-1.6.1-3.3 0 0 1.1-.3 3.5 1.3 1-.3 2.1-.4 3.1-.4s2.1.1 3.1.4c2.4-1.6 3.5-1.3 3.5-1.3.7 1.7.2 3 .1 3.3.8.9 1.3 2 1.3 3.4 0 4.9-2.9 5.9-5.7 6.2.4.4.8 1.1.8 2.3v3.4c0 .3.2.7.9.6C21.5 24.4 25 20.1 25 15c0-5.6-4-10-9-10z" fill="#336791"/>
+      </svg>
+    )
+  },
+  {
+    name: "Vitest / Jest",
+    color: "#c21807",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="4" fill="#fff6f5"/>
+        <path d="M16 4l2.6 6.9L26 13l-6.3 4.6L21.6 25 16 21l-5.6 4 1.9-7.4L6 13l7.4-2.1L16 4z" fill="#c21807"/>
+      </svg>
+    )
+  },
+  {
+    name: "Zustand",
+    color: "#443e38",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="16" fill="#443e38"/>
+        <path d="M9 12h14l-9 8h9" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+      </svg>
+    )
+  },
+  {
+    name: "TanStack Query",
+    color: "#ff4154",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="4" fill="#fff1f2"/>
+        <circle cx="16" cy="16" r="6" stroke="#ff4154" strokeWidth="2.2" fill="none"/>
+        <line x1="20.5" y1="20.5" x2="26" y2="26" stroke="#ff4154" strokeWidth="2.2" strokeLinecap="round"/>
+      </svg>
+    )
+  },
+  {
+    name: "Socket.IO",
+    color: "#010101",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="16" fill="#010101"/>
+        <circle cx="11" cy="16" r="3.2" fill="#fff"/>
+        <circle cx="21" cy="10" r="2.4" fill="#fff"/>
+        <circle cx="21" cy="22" r="2.4" fill="#fff"/>
+      </svg>
+    )
+  },
+  {
+    name: "Stripe",
+    color: "#635bff",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="6" fill="#635bff"/>
+        <text x="6" y="21" fontFamily="Georgia, serif" fontWeight="700" fontStyle="italic" fontSize="15" fill="#fff">S</text>
+      </svg>
+    )
+  },
+  {
+    name: "JWT",
+    color: "#000000",
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="4" fill="#fdfaf3"/>
+        <path d="M9 6v14a3 3 0 0 0 6 0V8" stroke="#000" strokeWidth="2.2" fill="none" strokeLinecap="round"/>
+        <text x="16.5" y="23" fontFamily="Arial, sans-serif" fontWeight="800" fontSize="8" fill="#000">WT</text>
+      </svg>
+    )
   }
 ];
 

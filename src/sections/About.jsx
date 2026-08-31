@@ -9,11 +9,7 @@ export const About = () => {
 
       <div className="aboutCard">
         <p>
-          I am a Computer Science graduate passionate about web
-          development and software engineering. I enjoy creating
-          responsive applications using React and Laravel while
-          continuously improving my technical and problem-solving
-          abilities.
+          I am a Full-Stack Web Developer passionate about building modern, responsive, and scalable web applications. I work with technologies including React, Next.js, Laravel, Node.js, Express.js, Python, and FastAPI, with experience in both SQL and NoSQL databases. I enjoy solving real-world problems, learning new technologies, and continuously improving my development skills.
         </p>
       </div>
     </section>
