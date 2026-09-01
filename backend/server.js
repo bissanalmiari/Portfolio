@@ -28,10 +28,12 @@ const contactLimiter = rateLimit({
 });
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD, // 16-char Gmail App Password, not your normal password
+    pass: process.env.GMAIL_APP_PASSWORD,
   },
 });
 
