@@ -7,6 +7,7 @@ import rateLimit from "express-rate-limit";
 dotenv.config();
 
 const app = express();
+app.set("trust proxy", 1);
 app.use(express.json());
 
 // Restrict which origins can call this API in production.
