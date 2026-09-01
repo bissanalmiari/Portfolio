@@ -1,13 +1,13 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 import rateLimit from "express-rate-limit";
 
 dotenv.config();
 
 const app = express();
-app.set("trust proxy", 1);
+app.set("trust proxy", 1); // needed behind Render's proxy for express-rate-limit
 app.use(express.json());
 
 // Restrict which origins can call this API in production.
@@ -28,15 +28,7 @@ const contactLimiter = rateLimit({
   message: { error: "Too many messages sent. Please try again later." },
 });
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD,
-  },
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.post("/api/contact", contactLimiter, async (req, res) => {
   const { name, email, message } = req.body || {};
@@ -49,14 +41,22 @@ app.post("/api/contact", contactLimiter, async (req, res) => {
   }
 
   try {
-    await transporter.sendMail({
-      from: `"Portfolio Contact Form" <${process.env.GMAIL_USER}>`,
-      to: process.env.GMAIL_USER,
+    const { error } = await resend.emails.send({
+      // Resend's free tier requires this "from" address unless you verify
+      // your own domain. Once you verify a domain in Resend, change this to
+      // something like "Portfolio <contact@yourdomain.com>".
+      from: "Portfolio Contact Form <onboarding@resend.dev>",
+      to: process.env.CONTACT_TO_EMAIL,
       replyTo: email,
       subject: `New portfolio message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
       html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Message:</strong></p><p>${message.replace(/\n/g, "<br/>")}</p>`,
     });
+
+    if (error) {
+      console.error("Failed to send contact email:", error);
+      return res.status(500).json({ error: "Failed to send message. Please try again later." });
+    }
 
     res.status(200).json({ success: true });
   } catch (err) {
